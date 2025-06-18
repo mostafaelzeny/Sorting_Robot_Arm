@@ -1,0 +1,18 @@
+# Goal
+bool home
+bool detect
+bool ripe
+bool move_to_target
+bool grip
+bool place
+bool return_home
+float32[] angles
+float32 diameter
+int32 ripeness
+---
+# Result
+bool success
+string result
+---
+# Feedback
+string feedback

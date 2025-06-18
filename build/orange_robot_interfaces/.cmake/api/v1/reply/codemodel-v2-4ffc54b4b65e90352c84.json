@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b5b0b1664d6ef332ef3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "orange_robot_interfaces__py",
+					"jsonFile" : "directory-orange_robot_interfaces__py-a1c0e2fe82f2b2f0841b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "orange_robot_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_orange_robot_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_orange_robot_interfaces_egg-4451b656a93c3eeffd01.json",
+					"name" : "ament_cmake_python_build_orange_robot_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_orange_robot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_orange_robot_interfaces-340dbf67de0e4d9a2fee.json",
+					"name" : "ament_cmake_python_copy_orange_robot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces-691faf2a06b12d488850.json",
+					"name" : "orange_robot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__cpp-06af00d4bcd30aa38ec0.json",
+					"name" : "orange_robot_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "orange_robot_interfaces__py::@47aaa2a4c8c8de3cb187",
+					"jsonFile" : "target-orange_robot_interfaces__py-5dc06dee3b709b4357f4.json",
+					"name" : "orange_robot_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_generator_c-66c974bcd56fc08c945e.json",
+					"name" : "orange_robot_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_generator_py-cd7a6c6e9f9308046d18.json",
+					"name" : "orange_robot_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_c-209b671af4f923e573ac.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_c__pyext-38dfd57905437efc2a68.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_cpp-f630d5c369dade3b99be.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_fastrtps_c-c0f0f61a284465f18408.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext-ac282de210b7107a4994.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp-26f38b5e996a873f7f95.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_introspection_c-d804ae994442bbe8da3e.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext-68aa60c6ffcf11b6111d.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces__rosidl_typesupport_introspection_cpp-72b6be3755616d12aeea.json",
+					"name" : "orange_robot_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orange_robot_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orange_robot_interfaces_uninstall-627e78151a8431172900.json",
+					"name" : "orange_robot_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c9f3446248046d4f8aef.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces",
+		"source" : "/home/mo/orange_ack_ws/src/orange_robot_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

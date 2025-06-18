@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "orange_robot_interfaces__py",
+		"source" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py"
+	}
+}

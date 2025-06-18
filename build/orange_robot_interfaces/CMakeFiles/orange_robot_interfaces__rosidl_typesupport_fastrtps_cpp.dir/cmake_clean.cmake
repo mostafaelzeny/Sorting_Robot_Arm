@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/action/detail/dds_fastrtps/execute_sequence__type_support.cpp.o"
+  "CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/action/detail/dds_fastrtps/execute_sequence__type_support.cpp.o.d"
+  "CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/srv/detail/dds_fastrtps/calculate_angles__type_support.cpp.o"
+  "CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/srv/detail/dds_fastrtps/calculate_angles__type_support.cpp.o.d"
+  "liborange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "liborange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/action/detail/dds_fastrtps/execute_sequence__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/action/detail/execute_sequence__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/srv/detail/calculate_angles__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/srv/detail/dds_fastrtps/calculate_angles__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

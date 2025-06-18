@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "orange_robot_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "orange_robot_interfaces__py::@47aaa2a4c8c8de3cb187",
+	"name" : "orange_robot_interfaces__py",
+	"paths" : 
+	{
+		"build" : "orange_robot_interfaces__py",
+		"source" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py/CMakeFiles/orange_robot_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/orange_robot_interfaces__py/CMakeFiles/orange_robot_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/mo/orange_ack_ws/build/orange_robot_interfaces/rosidl_generator_py/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

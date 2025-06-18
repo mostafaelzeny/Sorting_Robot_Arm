@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from orange_robot_interfaces/srv/CalculateAngles.srv
+// generated code does not contain a copyright notice
+
+
+module orange_robot_interfaces {
+  module srv {
+    struct CalculateAngles_Request {
+      float x;
+
+      float y;
+    };
+    struct CalculateAngles_Response {
+      sequence<float> angles;
+    };
+  };
+};

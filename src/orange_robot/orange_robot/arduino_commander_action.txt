@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionServer
+from orange_robot_interfaces.action import ExecuteSequence
+from std_msgs.msg import String
+import serial
+import time
+
+
+class ArduinoCommanderAction(Node):
+    def __init__(self):
+        super().__init__('arduino_commander_action')
+        self.ser = None
+        self.action_server = None
+
+        try:
+            self.ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)  # Increased timeout
+            self.get_logger().info("Serial connection to Arduino established.")
+            
+            # Clear any buffered data and wait for Arduino to be ready
+            self.flush_and_wait_ready()
+
+        except Exception as e:
+            self.get_logger().error(f"Unable to connect or initialize Arduino: {e}")
+            return
+
+        # Initialize the action server after confirming Arduino is ready
+        self.action_server = ActionServer(
+            self,
+            ExecuteSequence,
+            'execute_sequence',
+            self.execute_callback
+        )
+
+    def flush_and_wait_ready(self):
+        """Clear serial buffers and wait for Arduino READY signal"""
+        if not self.ser:
+            return False
+            
+        # Clear both input and output buffers
+        self.ser.reset_input_buffer()
+        self.ser.reset_output_buffer()
+        
+        # Wait for Arduino to boot up
+        time.sleep(3)
+        
+        # Read any stale data
+        while self.ser.in_waiting > 0:
+            stale_data = self.ser.readline().decode().strip()
+            self.get_logger().info(f"Clearing stale data: {stale_data}")
+            time.sleep(0.1)
+        
+        # Wait for READY signal with timeout
+        max_attempts = 10
+        for attempt in range(max_attempts):
+            if self.ser.in_waiting > 0:
+                response = self.ser.readline().decode().strip()
+                self.get_logger().info(f"Arduino response (attempt {attempt + 1}): {response}")
+                if "READY" in response:
+                    self.get_logger().info("Arduino is ready!")
+                    return True
+            time.sleep(1)
+        
+        raise RuntimeError("Arduino not ready after multiple attempts")
+
+    def send_command_robust(self, cmd, expected_ack, max_retries=3):
+        """Send command with robust error handling and retries"""
+        if not self.ser:
+            return False
+            
+        for attempt in range(max_retries):
+            try:
+                # Clear input buffer before sending
+                self.ser.reset_input_buffer()
+                
+                # Send command
+                command_str = f"<{cmd}>"
+                self.ser.write(command_str.encode())
+                self.ser.flush()  # Ensure data is sent immediately
+                self.get_logger().info(f"Sent to Arduino (attempt {attempt + 1}): {cmd}")
+                
+                # Wait for response with timeout
+                start_time = time.time()
+                timeout = 15.0  # Increased timeout for movement commands
+                
+                while time.time() - start_time < timeout:
+                    if self.ser.in_waiting > 0:
+                        response = self.ser.readline().decode().strip()
+                        self.get_logger().info(f"Arduino response: '{response}'")
+                        
+                        if expected_ack in response:
+                            return True
+                        elif response:  # Non-empty unexpected response
+                            self.get_logger().warn(f"Unexpected response: '{response}', expected: '{expected_ack}'")
+                            break
+                    time.sleep(0.1)
+                
+                # If we get here, either timeout or unexpected response
+                self.get_logger().warn(f"Command '{cmd}' failed on attempt {attempt + 1}")
+                
+                # Clear any remaining data before retry
+                while self.ser.in_waiting > 0:
+                    stale = self.ser.readline().decode().strip()
+                    self.get_logger().info(f"Clearing stale: {stale}")
+                
+                time.sleep(1)  # Brief pause before retry
+                
+            except Exception as e:
+                self.get_logger().error(f"Exception during command '{cmd}': {e}")
+                time.sleep(1)
+        
+        return False
+
+    def execute_callback(self, goal_handle):
+        self.get_logger().info("Executing sequence...")
+        
+        g = goal_handle.request
+
+        # Step 1: Go home
+        if g.home:
+            if not self.send_command_robust("HOME", "ACK_HOME"):
+                goal_handle.abort()
+                return ExecuteSequence.Result(success=False, result="Failed to reach home position")
+            goal_handle.publish_feedback(ExecuteSequence.Feedback(feedback="Moved to home."))
+
+        # Step 2: Detect (already handled by state_controller)
+
+        # Step 3: Ripeness check is for later
+
+        # Step 4: Move to target
+        if g.move_to_target:
+            angles = g.angles
+            cmd = f"ANGLES,{int(angles[0])},{int(angles[1])},{int(angles[2])},{int(angles[3])}"
+            if not self.send_command_robust(cmd, "ACK_ANGLES"):
+                goal_handle.abort()
+                return ExecuteSequence.Result(success=False, result="Failed to send angles")
+            goal_handle.publish_feedback(ExecuteSequence.Feedback(feedback="Moved to target."))
+            
+        # Step 5: Grip
+        if g.grip:
+            grip_cmd = f"GRIPPER,{int(g.diameter)}"
+            if not self.send_command_robust(grip_cmd, "ACK_GRIPPER"):
+                goal_handle.abort()
+                return ExecuteSequence.Result(success=False, result="Failed to grip orange")
+            goal_handle.publish_feedback(ExecuteSequence.Feedback(feedback="Gripped."))
+            
+        # Step 6: Place
+        if g.place:
+            ripeness = 1 if g.ripe else 0
+            if not self.send_command_robust(f"RIPENESS,{ripeness}", "ACK_RIPENESS"):
+                goal_handle.abort()
+                return ExecuteSequence.Result(success=False, result="Failed to place orange")
+            goal_handle.publish_feedback(ExecuteSequence.Feedback(feedback="Placed."))
+            time.sleep(2)  # Allow placement to complete
+            
+        # Step 7: Return home
+        if g.return_home:
+            if not self.send_command_robust("HOME", "ACK_HOME"):
+                goal_handle.abort()
+                return ExecuteSequence.Result(success=False, result="Failed to return home")
+            goal_handle.publish_feedback(ExecuteSequence.Feedback(feedback="Returned to home."))
+            
+        goal_handle.succeed()
+        return ExecuteSequence.Result(success=True, result="Sequence completed successfully.")
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = ArduinoCommanderAction()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        if node.ser:
+            node.ser.close()
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from std_srvs.srv import Trigger
+from std_msgs.msg import Float32
+from geometry_msgs.msg import Point
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import numpy as np
+import cv2
+
+class SerialServoService(Node):
+    def __init__(self):
+        super().__init__('serial_servo_service')
+
+        self.bridge = CvBridge()
+        self.latest_frame = None
+
+        # Load camera calibration
+        try:
+            with np.load('/home/mo/orange_ack_ws/src/orange_robot/orange_robot/camera_calibration.npz') as X:
+                self.mtx, self.dist = X['camera_matrix'], X['dist_coeffs']
+        except FileNotFoundError:
+            self.get_logger().error("camera_calibration.npz not found.")
+            raise
+
+        self.new_camera_mtx = None
+
+        # ArUco setup
+        self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
+        self.parameters = cv2.aruco.DetectorParameters_create()
+        self.real_world_pts = {
+            0: [0.0, 0.0],
+            2: [200.0, 0.0],
+            3: [200.0, 200.0],
+            1: [0.0, 200.0]
+        }
+
+        self.diameter_pub = self.create_publisher(Float32, 'diameter', 10)
+        self.position_pub = self.create_publisher(Point, 'position', 10)
+        self.subscription = self.create_subscription(Image, '/camera/image_raw', self.image_callback, 10)
+        self.srv = self.create_service(Trigger, 'detect_orange', self.handle_detect_orange)
+
+        self.get_logger().info("SerialServoService ready.")
+
+    def image_callback(self, msg):
+        try:
+            self.latest_frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except Exception as e:
+            self.get_logger().error(f"Image conversion failed: {e}")
+
+    def handle_detect_orange(self, request, response):
+        if self.latest_frame is None:
+            response.success = False
+            response.message = "No image frame available."
+            return response
+
+        frame = self.latest_frame.copy()
+
+        if self.new_camera_mtx is None:
+            h, w = frame.shape[:2]
+            self.new_camera_mtx, _ = cv2.getOptimalNewCameraMatrix(
+                self.mtx, self.dist, (w, h), 1, (w, h))
+
+        undistorted = cv2.undistort(frame, self.mtx, self.dist, None, self.new_camera_mtx)
+        gray = cv2.cvtColor(undistorted, cv2.COLOR_BGR2GRAY)
+
+        corners, ids, _ = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.parameters)
+
+        if ids is not None and len(ids) >= 4:
+            ids = ids.flatten()
+            img_pts = []
+            world_pts = []
+            id0_center = None
+
+            for i, corner in zip(ids, corners):
+                if i in self.real_world_pts:
+                    center = np.mean(corner[0], axis=0)
+                    img_pts.append(center)
+                    world_pts.append(self.real_world_pts[i])
+                    if i == 0:
+                        id0_center = center
+
+            if len(img_pts) == 4:
+                H, _ = cv2.findHomography(np.array(img_pts), np.array(world_pts))
+
+                warped = cv2.warpPerspective(undistorted, H, (300, 300))  # assumes 20cm x 20cm board
+
+                if id0_center is not None:
+                    id0_center_h = np.array([id0_center[0], id0_center[1], 1.0]).reshape(3, 1)
+                    id0_warped = H @ id0_center_h
+                    id0_warped /= id0_warped[2]
+                    id0_warped = id0_warped[:2].flatten().astype(np.float32)
+                else:
+                    id0_warped = np.array([0.0, 0.0], dtype=np.float32)
+
+                hsv = cv2.cvtColor(warped, cv2.COLOR_BGR2HSV)
+                lower_orange = np.array([5, 100, 100])
+                upper_orange = np.array([20, 255, 255])
+                mask = cv2.inRange(hsv, lower_orange, upper_orange)
+
+                kernel = np.ones((5, 5), np.uint8)
+                mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+                mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+
+                contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+                for cnt in contours:
+                    area = cv2.contourArea(cnt)
+                    if area > 500:
+                        (x, y), radius = cv2.minEnclosingCircle(cnt)
+                        center = (int(x), int(y))
+                        radius = int(radius)
+
+                        diameter_mm = 2 * radius
+                        pos_x_mm = center[0] - id0_warped[0]
+                        pos_y_mm = center[1] - id0_warped[1]
+
+                        # Convert to cm
+                        diameter_cm = diameter_mm / 10.0
+                        pos_x_cm = pos_x_mm / 10.0
+                        pos_y_cm = pos_y_mm / 10.0
+
+                        d_msg = Float32()
+                        d_msg.data = float(diameter_cm)
+                        self.diameter_pub.publish(d_msg)
+
+                        pos_msg = Point()
+                        pos_msg.x = float(pos_x_cm)
+                        pos_msg.y = float(pos_y_cm)
+                        pos_msg.z = 0.0
+                        self.position_pub.publish(pos_msg)
+
+                        self.get_logger().info(
+                            f"Published: Diameter={diameter_cm:.2f}cm, Position=({pos_x_cm:.2f}, {pos_y_cm:.2f})cm"
+                        )
+
+                        response.success = True
+                        response.message = "Orange detected and data published."
+                        return response
+
+        response.success = False
+        response.message = "No valid detection or ArUco pattern incomplete."
+        return response
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = SerialServoService()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

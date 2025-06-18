@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>orange_robot</name>
+  <version>0.0.1</version>
+  <description>Hybrid ROS2 robotic arm using services and actions</description>
+  <maintainer email="mostafaelzeny27@gmail.com">mo</maintainer>
+  <license>MIT</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_python</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <!-- Dependencies required to build interfaces -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>action_msgs</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <depend>orange_robot_interfaces</depend>
+
+
+  <!-- Export build type and interface declaration -->
+  <export>
+    <build_type>ament_python</build_type>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+  </export>
+</package>

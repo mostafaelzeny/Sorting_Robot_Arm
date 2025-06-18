@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from orange_robot_interfaces/action/ExecuteSequence.action
+// generated code does not contain a copyright notice
+
+
+module orange_robot_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct ExecuteSequence_Goal {
+      boolean home;
+
+      boolean detect;
+
+      boolean ripe;
+
+      boolean move_to_target;
+
+      boolean grip;
+
+      boolean place;
+
+      boolean return_home;
+
+      sequence<float> angles;
+
+      float diameter;
+
+      int32 ripeness;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct ExecuteSequence_Result {
+      boolean success;
+
+      string result;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct ExecuteSequence_Feedback {
+      string feedback;
+    };
+  };
+};

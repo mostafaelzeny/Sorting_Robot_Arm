@@ -1,0 +1,269 @@
+[0.011s] Invoking command in '/home/mo/orange_ack_ws/build/orange_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mo/orange_ack_ws/install/orange_robot:/home/mo/ws_moveit2/install/moveit_configs_utils:/home/mo/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/mo/orange_ack_ws/build/orange_robot_interfaces -- -j16 -l16
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.113s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.121s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.142s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.157s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.374s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.524s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.718s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.732s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.747s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.747s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.747s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.798s] -- Configuring done
+[0.819s] -- Generating done
+[0.827s] -- Build files have been written to: /home/mo/orange_ack_ws/build/orange_robot_interfaces
+[0.851s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.860s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.868s] [  5%] Built target ament_cmake_python_copy_orange_robot_interfaces
+[1.049s] running egg_info
+[1.049s] writing orange_robot_interfaces.egg-info/PKG-INFO
+[1.050s] writing dependency_links to orange_robot_interfaces.egg-info/dependency_links.txt
+[1.050s] writing top-level names to orange_robot_interfaces.egg-info/top_level.txt
+[1.052s] reading manifest file 'orange_robot_interfaces.egg-info/SOURCES.txt'
+[1.052s] writing manifest file 'orange_robot_interfaces.egg-info/SOURCES.txt'
+[1.074s] [  5%] Built target ament_cmake_python_build_orange_robot_interfaces_egg
+[1.226s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_generator_c[0m
+[1.238s] [  7%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/orange_robot_interfaces/srv/detail/calculate_angles__functions.c.o[0m
+[1.239s] [ 10%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/orange_robot_interfaces/action/detail/execute_sequence__functions.c.o[0m
+[1.244s] [ 10%] Built target orange_robot_interfaces__cpp
+[1.254s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.255s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.255s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.338s] [ 20%] [32m[1mLinking C shared library liborange_robot_interfaces__rosidl_generator_c.so[0m
+[1.372s] [ 20%] Built target orange_robot_interfaces__rosidl_generator_c
+[1.383s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.384s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.384s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.526s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_cpp[0m
+[1.541s] [ 33%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orange_robot_interfaces/action/execute_sequence__type_support.cpp.o[0m
+[1.541s] [ 33%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orange_robot_interfaces/srv/calculate_angles__type_support.cpp.o[0m
+[1.579s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.595s] [ 38%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orange_robot_interfaces/srv/detail/calculate_angles__type_support.cpp.o[0m
+[1.595s] [ 38%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orange_robot_interfaces/action/detail/execute_sequence__type_support.cpp.o[0m
+[1.640s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.657s] [ 41%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/srv/detail/dds_fastrtps/calculate_angles__type_support.cpp.o[0m
+[1.663s] [ 43%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orange_robot_interfaces/action/detail/dds_fastrtps/execute_sequence__type_support.cpp.o[0m
+[1.667s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_c[0m
+[1.682s] [ 46%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/orange_robot_interfaces/srv/calculate_angles__type_support.cpp.o[0m
+[1.688s] [ 48%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/orange_robot_interfaces/action/execute_sequence__type_support.cpp.o[0m
+[1.741s] [ 51%] [32m[1mLinking CXX shared library liborange_robot_interfaces__rosidl_typesupport_c.so[0m
+[1.767s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_introspection_c[0m
+[1.775s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.784s] [ 53%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orange_robot_interfaces/srv/detail/calculate_angles__type_support.c.o[0m
+[1.787s] [ 56%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orange_robot_interfaces/action/detail/execute_sequence__type_support.c.o[0m
+[1.788s] [ 56%] Built target orange_robot_interfaces__rosidl_typesupport_c
+[1.790s] [ 58%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orange_robot_interfaces/action/detail/execute_sequence__type_support_c.cpp.o[0m
+[1.795s] [ 61%] [32mBuilding CXX object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orange_robot_interfaces/srv/detail/calculate_angles__type_support_c.cpp.o[0m
+[1.838s] [ 64%] [32m[1mLinking C shared library liborange_robot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.872s] [ 64%] Built target orange_robot_interfaces__rosidl_typesupport_introspection_c
+[1.916s] [ 66%] [32m[1mLinking CXX shared library liborange_robot_interfaces__rosidl_typesupport_cpp.so[0m
+[1.955s] [ 66%] Built target orange_robot_interfaces__rosidl_typesupport_cpp
+[2.073s] [ 69%] [32m[1mLinking CXX shared library liborange_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.076s] [ 71%] [32m[1mLinking CXX shared library liborange_robot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.129s] [ 71%] Built target orange_robot_interfaces__rosidl_typesupport_introspection_cpp
+[2.131s] [ 71%] Built target orange_robot_interfaces__rosidl_typesupport_fastrtps_c
+[2.149s] [ 74%] [32m[1mLinking CXX shared library liborange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.201s] [ 74%] Built target orange_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.221s] [ 74%] Built target orange_robot_interfaces
+[2.240s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.870s] [ 76%] Built target orange_robot_interfaces__py
+[2.880s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_generator_py[0m
+[2.892s] [ 82%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/orange_robot_interfaces/srv/_calculate_angles_s.c.o[0m
+[2.892s] [ 82%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/orange_robot_interfaces/action/_execute_sequence_s.c.o[0m
+[2.994s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/orange_robot_interfaces/liborange_robot_interfaces__rosidl_generator_py.so[0m
+[3.026s] [ 84%] Built target orange_robot_interfaces__rosidl_generator_py
+[3.037s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.037s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_c__pyext[0m
+[3.037s] [35m[1mConsolidate compiler generated dependencies of target orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.049s] [ 92%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.049s] [ 92%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.049s] [ 92%] [32mBuilding C object CMakeFiles/orange_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.145s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.146s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.146s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.186s] [100%] Built target orange_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.186s] [100%] Built target orange_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.186s] [100%] Built target orange_robot_interfaces__rosidl_typesupport_c__pyext
+[3.197s] Invoked command in '/home/mo/orange_ack_ws/build/orange_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mo/orange_ack_ws/install/orange_robot:/home/mo/ws_moveit2/install/moveit_configs_utils:/home/mo/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/mo/orange_ack_ws/build/orange_robot_interfaces -- -j16 -l16
+[3.205s] Invoking command in '/home/mo/orange_ack_ws/build/orange_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mo/orange_ack_ws/install/orange_robot:/home/mo/ws_moveit2/install/moveit_configs_utils:/home/mo/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/mo/orange_ack_ws/build/orange_robot_interfaces
+[3.213s] -- Install configuration: ""
+[3.213s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/orange_robot_interfaces
+[3.213s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.213s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.213s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__struct.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__type_support.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__functions.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__functions.c
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/execute_sequence.h
+[3.214s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg
+[3.214s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.214s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.214s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__type_support.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__struct.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__functions.c
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__functions.h
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/calculate_angles.h
+[3.214s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/library_path.sh
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/library_path.dsv
+[3.214s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_generator_c.so
+[3.215s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_generator_c.so" to ""
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.215s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__rosidl_typesupport_fastrtps_c.h
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.215s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__rosidl_typesupport_fastrtps_c.h
+[3.215s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.215s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.215s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.215s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__rosidl_typesupport_introspection_c.h
+[3.215s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__type_support.c
+[3.216s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg
+[3.216s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.216s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.216s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.216s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__rosidl_typesupport_introspection_c.h
+[3.216s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__type_support.c
+[3.216s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_introspection_c.so
+[3.216s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.216s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_c.so
+[3.216s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_c.so" to ""
+[3.216s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__struct.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__traits.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__type_support.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__builder.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/execute_sequence.hpp
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/calculate_angles.hpp
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__type_support.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__struct.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__traits.hpp
+[3.217s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__builder.hpp
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.217s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/dds_fastrtps
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__rosidl_typesupport_fastrtps_cpp.hpp
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/dds_fastrtps
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__rosidl_typesupport_fastrtps_cpp.hpp
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.218s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__type_support.cpp
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/action/detail/execute_sequence__rosidl_typesupport_introspection_cpp.hpp
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv
+[3.218s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__rosidl_typesupport_introspection_cpp.hpp
+[3.218s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/include/orange_robot_interfaces/orange_robot_interfaces/srv/detail/calculate_angles__type_support.cpp
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.219s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_cpp.so
+[3.219s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.219s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/pythonpath.sh
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/pythonpath.dsv
+[3.219s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces-0.0.1-py3.10.egg-info
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[3.219s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[3.220s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces
+[3.220s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action/__init__.py
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action/_execute_sequence_s.c
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action/_execute_sequence.py
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/__init__.py
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.220s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv/__init__.py
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv/_calculate_angles_s.c
+[3.220s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv/_calculate_angles.py
+[3.221s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/_orange_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[3.221s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.221s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/liborange_robot_interfaces__rosidl_generator_py.so
+[3.256s] Listing '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces'...
+[3.256s] Compiling '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/__init__.py'...
+[3.256s] Listing '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action'...
+[3.256s] Compiling '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action/__init__.py'...
+[3.256s] Compiling '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/action/_execute_sequence.py'...
+[3.256s] Listing '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv'...
+[3.256s] Compiling '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv/__init__.py'...
+[3.256s] Compiling '/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/srv/_calculate_angles.py'...
+[3.260s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.260s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.260s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.260s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.260s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.260s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages/orange_robot_interfaces/orange_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.260s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_generator_py.so
+[3.261s] -- Set runtime path of "/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib/liborange_robot_interfaces__rosidl_generator_py.so" to ""
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/srv/CalculateAngles.idl
+[3.261s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/action/ExecuteSequence.idl
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/srv/CalculateAngles.srv
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/srv/CalculateAngles_Request.msg
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/srv/CalculateAngles_Response.msg
+[3.261s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/action/ExecuteSequence.action
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/orange_robot_interfaces
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/orange_robot_interfaces
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/ament_prefix_path.sh
+[3.261s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/ament_prefix_path.dsv
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/path.sh
+[3.261s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/environment/path.dsv
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/local_setup.bash
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/local_setup.sh
+[3.261s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/local_setup.zsh
+[3.261s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/local_setup.dsv
+[3.262s] -- Installing: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/package.dsv
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/ament_index/resource_index/packages/orange_robot_interfaces
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_generator_cExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_cExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_generator_cppExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_cppExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_generator_pyExport.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/export_orange_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.262s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfacesConfig.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/cmake/orange_robot_interfacesConfig-version.cmake
+[3.263s] -- Up-to-date: /home/mo/orange_ack_ws/install/orange_robot_interfaces/share/orange_robot_interfaces/package.xml
+[3.264s] Invoked command in '/home/mo/orange_ack_ws/build/orange_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mo/orange_ack_ws/install/orange_robot:/home/mo/ws_moveit2/install/moveit_configs_utils:/home/mo/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/mo/orange_ack_ws/build/orange_robot_interfaces

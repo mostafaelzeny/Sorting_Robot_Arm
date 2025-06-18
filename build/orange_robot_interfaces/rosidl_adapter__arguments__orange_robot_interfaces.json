@@ -1,0 +1,7 @@
+{
+  "package_name": "orange_robot_interfaces",
+  "non_idl_tuples": [
+    "/home/mo/orange_ack_ws/src/orange_robot_interfaces:srv/CalculateAngles.srv",
+    "/home/mo/orange_ack_ws/src/orange_robot_interfaces:action/ExecuteSequence.action"
+  ]
+}

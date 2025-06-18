@@ -1,0 +1,8 @@
+[console_scripts]
+angles_calculator_service = orange_robot.angles_calculator_service:main
+arduino_commander_action = orange_robot.arduino_commander_action:main
+camera_publisher = orange_robot.camera_publisher:main
+maturity_detector_service = orange_robot.maturity_detector_service:main
+serial_servo_service = orange_robot.serial_servo_service:main
+state_controller = orange_robot.state_controller:main
+

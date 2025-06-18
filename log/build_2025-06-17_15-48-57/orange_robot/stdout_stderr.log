@@ -1,0 +1,30 @@
+running egg_info
+writing ../../build/orange_robot/orange_robot.egg-info/PKG-INFO
+writing dependency_links to ../../build/orange_robot/orange_robot.egg-info/dependency_links.txt
+writing entry points to ../../build/orange_robot/orange_robot.egg-info/entry_points.txt
+writing requirements to ../../build/orange_robot/orange_robot.egg-info/requires.txt
+writing top-level names to ../../build/orange_robot/orange_robot.egg-info/top_level.txt
+reading manifest file '../../build/orange_robot/orange_robot.egg-info/SOURCES.txt'
+writing manifest file '../../build/orange_robot/orange_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying orange_robot/state_controller.py -> /home/mo/orange_ack_ws/build/orange_robot/build/lib/orange_robot
+copying orange_robot/arduino_commander_action.py -> /home/mo/orange_ack_ws/build/orange_robot/build/lib/orange_robot
+running install
+running install_lib
+copying /home/mo/orange_ack_ws/build/orange_robot/build/lib/orange_robot/state_controller.py -> /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot
+copying /home/mo/orange_ack_ws/build/orange_robot/build/lib/orange_robot/arduino_commander_action.py -> /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot
+byte-compiling /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot/state_controller.py to state_controller.cpython-310.pyc
+byte-compiling /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot/arduino_commander_action.py to arduino_commander_action.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/orange_robot/orange_robot.egg-info to /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot-0.0.1-py3.10.egg-info
+running install_scripts
+Installing angles_calculator_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+Installing arduino_commander_action script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+Installing camera_publisher script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+Installing maturity_detector_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+Installing serial_servo_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+Installing state_controller script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+writing list of installed files to '/home/mo/orange_ack_ws/build/orange_robot/install.log'

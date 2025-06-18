@@ -1,0 +1,26 @@
+[0.594s] Invoking command in '/home/mo/orange_ack_ws/src/orange_robot': AMENT_PREFIX_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mo/orange_ack_ws/build/orange_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages:/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/orange_robot build --build-base /home/mo/orange_ack_ws/build/orange_robot/build install --record /home/mo/orange_ack_ws/build/orange_robot/install.log --single-version-externally-managed install_data
+[0.780s] running egg_info
+[0.780s] writing ../../build/orange_robot/orange_robot.egg-info/PKG-INFO
+[0.787s] writing dependency_links to ../../build/orange_robot/orange_robot.egg-info/dependency_links.txt
+[0.787s] writing entry points to ../../build/orange_robot/orange_robot.egg-info/entry_points.txt
+[0.787s] writing requirements to ../../build/orange_robot/orange_robot.egg-info/requires.txt
+[0.787s] writing top-level names to ../../build/orange_robot/orange_robot.egg-info/top_level.txt
+[0.789s] reading manifest file '../../build/orange_robot/orange_robot.egg-info/SOURCES.txt'
+[0.790s] writing manifest file '../../build/orange_robot/orange_robot.egg-info/SOURCES.txt'
+[0.790s] running build
+[0.790s] running build_py
+[0.793s] running install
+[0.793s] running install_lib
+[0.794s] running install_data
+[0.794s] running install_egg_info
+[0.795s] removing '/home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot-0.0.1-py3.10.egg-info' (and everything under it)
+[0.796s] Copying ../../build/orange_robot/orange_robot.egg-info to /home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages/orange_robot-0.0.1-py3.10.egg-info
+[0.796s] running install_scripts
+[0.802s] Installing angles_calculator_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] Installing arduino_commander_action script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] Installing camera_publisher script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] Installing maturity_detector_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] Installing serial_servo_service script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] Installing state_controller script to /home/mo/orange_ack_ws/install/orange_robot/lib/orange_robot
+[0.803s] writing list of installed files to '/home/mo/orange_ack_ws/build/orange_robot/install.log'
+[0.823s] Invoked command in '/home/mo/orange_ack_ws/src/orange_robot' returned '0': AMENT_PREFIX_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mo/orange_ack_ws/install/orange_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mo/orange_ack_ws/build/orange_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mo/orange_ack_ws/install/orange_robot/lib/python3.10/site-packages:/home/mo/orange_ack_ws/install/orange_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/orange_robot build --build-base /home/mo/orange_ack_ws/build/orange_robot/build install --record /home/mo/orange_ack_ws/build/orange_robot/install.log --single-version-externally-managed install_data
