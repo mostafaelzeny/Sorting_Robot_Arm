@@ -35,25 +35,6 @@ Visualization and simulation in RViz and Gazebo
 
 Automated sorting based on orange ripeness levels
 
-🧩 Folder Structure
-
-Sorting_Robot_Arm/
-├── src/
-│   ├── orange_robot/
-│   │   ├── camera_publisher.py
-│   │   ├── maturity_detector_service.py
-│   │   ├── serial_servo_service.py
-│   │   ├── state_controller.py
-│   ├── orange_robot_interfaces/
-│   │   ├── action/
-│   │   ├── srv/
-│   ├── resource/
-│   ├── test/
-├── Arduino_sketch.c
-├── package.xml
-├── setup.py
-├── CMakeLists.txt
-└── README.md
 
 Visualization:
 ![alt text](image-1.png)
