@@ -37,6 +37,19 @@ Automated sorting based on orange ripeness levels
 
 
 Visualization:
-![alt text](image-1.png)
-![alt text](image.png)
-![alt text](image-2.png)
+![CAD Model](image-1.png)
+![RViz Visualization](image.png)
+
+🎥 Demo Video
+
+Watch the robot in action on YouTube: [Development of a 4-DOF Robot Arm with soft Gripper for Agricultural Products classification](https://www.youtube.com/watch?v=ujlwI9lmM6A)
+
+📸 Sorting Sequence
+
+| 1. Home Position | 2. Moving to Target | 3. Gripping |
+| :---: | :---: | :---: |
+| ![Home position](images/1_home_position.jpg) | ![Moving to target](images/2_moving_to_target.jpg) | ![Gripping](images/3_gripping.jpg) |
+
+| 4. Ripe Orange Detected | 5. Place Orange | 6. Back to Home Position |
+| :---: | :---: | :---: |
+| ![Ripe orange](images/4_ripe_orange.jpg) | ![Place orange](images/5_place_orange.jpg) | ![Back to home position](images/6_back_to_home.jpg) |
