@@ -1,5 +1,7 @@
 **Sorting Robot Arm (Graduation Project)**
 
+🎥 Robot Working Video: [Development of a 4-DOF Robot Arm with soft Gripper for Agricultural Products classification](https://www.youtube.com/watch?v=ujlwI9lmM6A)
+
 **Overview**
 
 A brief summary of your project:
@@ -50,7 +52,3 @@ Automated sorting based on orange ripeness levels
 Visualization:
 ![CAD Model](image-1.png)
 ![RViz Visualization](image.png)
-
-🎥 Robot Working Video
-
-Watch the robot in action on YouTube: [Development of a 4-DOF Robot Arm with soft Gripper for Agricultural Products classification](https://www.youtube.com/watch?v=ujlwI9lmM6A)
