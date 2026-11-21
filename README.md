@@ -1,5 +1,6 @@
-🦾 Sorting Robot Arm (Graduation Project)
-🎯 Overview
+**Sorting Robot Arm (Graduation Project)**
+
+**Overview**
 
 A brief summary of your project:
 
@@ -36,14 +37,6 @@ Visualization and simulation in RViz and Gazebo
 Automated sorting based on orange ripeness levels
 
 
-Visualization:
-![CAD Model](image-1.png)
-![RViz Visualization](image.png)
-
-🎥 Robot Working Video
-
-Watch the robot in action on YouTube: [Development of a 4-DOF Robot Arm with soft Gripper for Agricultural Products classification](https://www.youtube.com/watch?v=ujlwI9lmM6A)
-
 📸 Sorting Sequence
 
 | 1. Home Position | 2. Moving to Target | 3. Gripping |
@@ -53,3 +46,11 @@ Watch the robot in action on YouTube: [Development of a 4-DOF Robot Arm with sof
 | 4. Ripe Orange Detected | 5. Place Orange | 6. Back to Home Position |
 | :---: | :---: | :---: |
 | ![Ripe orange](images/4_ripe_orange.jpg) | ![Place orange](images/5_place_orange.jpg) | ![Back to home position](images/6_back_to_home.jpg) |
+
+Visualization:
+![CAD Model](image-1.png)
+![RViz Visualization](image.png)
+
+🎥 Robot Working Video
+
+Watch the robot in action on YouTube: [Development of a 4-DOF Robot Arm with soft Gripper for Agricultural Products classification](https://www.youtube.com/watch?v=ujlwI9lmM6A)
