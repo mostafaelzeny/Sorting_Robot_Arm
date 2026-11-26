@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>orange_robot_interfaces</name>
+  <version>0.0.1</version>
+  <description>Custom interfaces for orange_robot</description>
+  <maintainer email="mostafaelzeny27@gmail.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+  </export>
+</package>
+
